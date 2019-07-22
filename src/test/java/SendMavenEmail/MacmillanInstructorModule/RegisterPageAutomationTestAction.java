@@ -8,7 +8,7 @@ public class RegisterPageAutomationTestAction extends GetPage {
 
 	public static void launch() {
 		launchbrowser();
-		getDriver(XpathClass.url);
+	    getDriver(XpathClass.url);
 	}
 
 	public static void signin() throws InterruptedException {

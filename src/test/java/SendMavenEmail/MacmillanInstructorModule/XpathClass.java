@@ -26,12 +26,19 @@ public class XpathClass {
 	public static String vistext2;
 	public static String vistext3;
 	public static String driverpathinfo;
+	public static String user;
+	public static String passwo;
+	public static String loginbutton;
 
 	XpathClass() {
 
+		
 		url = "https://staging.macmillan-learning.com/college/us";
 		driverpathinfo = "/home/qainfotech/Downloads/chromedriver";
 		signin = "//a[@href=\"/college/us/login\"]";
+		
+		//Register Page 
+		
 		createacc = "//button[@id=\"createAccount\"]";
 		firstname = "//input[@id=\"firstName\"]";
 		lastname = "//input[@id=\"lastName\"]";
@@ -52,6 +59,13 @@ public class XpathClass {
 		signup = "//button[@id=\"signup\"]";
 		vistext2 = "What street did you grow up on?";
 		vistext3 = "What was your favorite place to visit as a child?";
+		
+		//Login Page
+		
+		user="//input[@id=\"username\"]";
+	    passwo="//input[@id=\"password\"]";
+	    loginbutton="//button[@id=\"signin\"]";
+		
 	}
 
 }

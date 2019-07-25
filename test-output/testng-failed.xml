@@ -5,15 +5,9 @@
     <classes>
       <class name="SendMavenEmail.MacmillanInstructorModule.RegisterPageAutomationTest">
         <methods>
-          <include name="Test06SecurityquestionNo3"/>
-          <include name="Test05SecurityquestionNo2"/>
           <include name="Test07FillDetails"/>
-          <include name="Test04SecurityquestionNo1"/>
-          <include name="Test02CreateAccount"/>
           <include name="launchdriver"/>
-          <include name="Test03FillDetails"/>
           <include name="Test08CheckBoxClicking"/>
-          <include name="Test01Clickonsignin"/>
         </methods>
       </class> <!-- SendMavenEmail.MacmillanInstructorModule.RegisterPageAutomationTest -->
     </classes>

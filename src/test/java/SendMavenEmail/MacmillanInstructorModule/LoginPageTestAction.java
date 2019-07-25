@@ -1,33 +1,35 @@
 package SendMavenEmail.MacmillanInstructorModule;
 
+import java.io.IOException;
+
 public class LoginPageTestAction extends GetPage {
 
 	
-	public static void launching() {
+	public static void launching() throws IOException {
 		launchbrowser();
-		getDriver(XpathClass.url);
+		getDriver("https://" + yamlReader.readingDataFromYamlFile("url"));
 	}
 	
 	public static void signoptionclick() throws InterruptedException
 	{
-		driverfind(XpathClass.signin);
+		TxtFileRead.getElement(driver,"signin","Data.txt").click();
 		waiting(2000);
 	}
 	
 	public static  void username() throws InterruptedException
 	{
-		sendkeys(XpathClass.user, "testdemo");
+		 TxtFileRead.getElement(driver,"user","Data.txt").sendKeys("testdemo");
 		waiting(2000);
 	}
 	
 	public static void password() throws InterruptedException
 	{
-		sendkeys(XpathClass.passwo, "testdemo");
+		 TxtFileRead.getElement(driver,"passwo","Data.txt").sendKeys("testdemo");
 		waiting(2000);
 
 	}
 	public static void loginbtn() throws InterruptedException {
-		driverfind(XpathClass.loginbutton);
+		TxtFileRead.getElement(driver,"loginbutton","Data.txt").click();
 		waiting(2000);
 	}
 	

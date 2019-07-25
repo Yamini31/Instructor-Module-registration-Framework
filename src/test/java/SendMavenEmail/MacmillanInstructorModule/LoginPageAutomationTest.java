@@ -1,8 +1,7 @@
 package SendMavenEmail.MacmillanInstructorModule;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.IOException;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,7 +9,7 @@ public class LoginPageAutomationTest extends XpathClass{
 
 
      @BeforeTest
-	public void Test1LaunchDriver() throws InterruptedException {
+	public void Test1LaunchDriver() throws InterruptedException, IOException {
     	 LoginPageTestAction.launching();
 	}
 

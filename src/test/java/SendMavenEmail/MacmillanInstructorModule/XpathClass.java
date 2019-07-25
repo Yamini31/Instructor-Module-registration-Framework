@@ -53,7 +53,7 @@ public class XpathClass {
 		secques3 = "Security_Question_3__c";
 		answer3 = "//input[@id=\"Security_Question_3_Answer__c\"]";
 		college = "//input[@class='react-autosuggest__input']";
-		selectfromdropdown = "//span[text()='Fortis College']";
+		selectfromdropdown="//span[text()='Fortis College']";
 		checkbox1 = "//input[@id='OptIn__c']";
 		checkbox2 = "//input[@id='Terms_of_Service__c']";
 		signup = "//button[@id=\"signup\"]";
